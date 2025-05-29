@@ -5,4 +5,99 @@ body {
   background-size: cover;
   min-height: 100vh;
   font-family: 'Fredoka', sans-serif;
+  overflow-y: hidden;
+}
+
+.content-container {
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+  margin: 250px 0 200px 0;
+}
+
+.content-container h1 {
+  font-weight: 600;
+  font-size: 128px;
+  letter-spacing: 0;
+  line-height: 100%;
+  text-shadow: 0px 4px 9.3px rgb(0, 0, 0);
+}
+
+.content-container p {
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 100%;
+  text-shadow: 0px 2px 2.5px rgb(0, 0, 0);
+}
+
+/* form */
+
+.login-container {
+  background: rgba(119, 119, 119, 0.183);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 12px;
+  padding: 30px 40px;
+  width: 45%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.form-label {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.input-group-text {
+  border: none;
+  cursor: default;
+}
+.form-control {
+  padding: 15px;
+  background: white;
+  border-radius: 20px !important;
+  color: #333;
+  width: 100% !important;
+  min-width: 650px !important;
+}
+.password-wrapper {
+  position: relative;
+}
+.username-wrapper {
+  position: relative; /* add this */
+}
+.username-password,
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  opacity: 0.6;
+  pointer-events: auto; /* ensure clickable */
+  z-index: 10; /* stay above inputs */
+}
+
+.toggle-password {
+  cursor: pointer;
+}
+
+.btn-login {
+  background-color: black;
+  border-radius: 20px;
+  width: 100%;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.btn-login:hover {
+  background-color: #333;
 }
