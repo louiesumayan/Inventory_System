@@ -38,7 +38,6 @@ body {
 .content-container h1 {
   font-weight: 600;
   font-size: 6vw; /* responsive font size */
-  max-font-size: 128px;
   line-height: 1;
   text-shadow: 0px 4px 9.3px rgb(0, 0, 0);
   margin: 0;
@@ -46,7 +45,6 @@ body {
 
 .content-container p {
   font-size: 3vw;
-  max-font-size: 32px;
   font-weight: 300;
   line-height: 1;
   text-shadow: 0px 2px 2.5px rgb(0, 0, 0);
