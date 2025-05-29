@@ -14,7 +14,7 @@ A personal project implementing a full-featured inventory management system usin
 
 - PHP (vanilla)  
 - JavaScript (vanilla)  
-- MySQL or MariaDB (for database)  
+- MySQL (for database)  
 - HTML5 & CSS3
 - BS5  
 
