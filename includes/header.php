@@ -8,6 +8,7 @@
   integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
  <link rel="stylesheet" href="css/style.css">
+ <link rel="icon" href="images/Logo.png" type="image/x-icon" />
  <title><?php echo isset($page_title) ? $page_title : 'Inventory System' ?></title>
 </head>
 

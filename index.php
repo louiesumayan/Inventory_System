@@ -1,4 +1,4 @@
-<?php $page_title = 'Home Page' ?>
+<?php $page_title = 'BM Digital Services' ?>
 <?php include './includes/header.php' ?>
 
 <div class="content-container">
