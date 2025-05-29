@@ -20,7 +20,7 @@ A personal project implementing a full-featured inventory management system usin
 
 ## Design
 
-The UI/UX design is based on detailed wireframes and prototypes created using [Figma]([https://figma.com](https://www.figma.com/design/cfGP1KuWoYakYvDYhh9YIG/BM-Digital-Services-UI-UX?node-id=0-1&t=HTkXIVgyep9m2zB1-1)).
+The UI/UX design is based on detailed wireframes and prototypes created using [Figma](https://www.figma.com/design/cfGP1KuWoYakYvDYhh9YIG/BM-Digital-Services-UI-UX?node-id=0-1&t=HTkXIVgyep9m2zB1-1).
 
 ## Installation
 
