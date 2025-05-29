@@ -5,74 +5,79 @@ body {
   background-size: cover;
   min-height: 100vh;
   font-family: 'Fredoka', sans-serif;
-  overflow-y: hidden;
+  overflow-y: hidden; /* allow scrolling on small devices */
+  margin: 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
+/* Content container */
 .content-container {
   text-align: center;
   color: white;
-  font-size: 1.3rem;
-  margin: 250px 0 200px 0;
+  margin: 150px 0 100px 0;
+  padding: 0 1rem;
 }
 
 .content-container h1 {
   font-weight: 600;
-  font-size: 128px;
-  letter-spacing: 0;
-  line-height: 100%;
+  font-size: 6vw; /* responsive font size */
+  max-font-size: 128px;
+  line-height: 1;
   text-shadow: 0px 4px 9.3px rgb(0, 0, 0);
+  margin: 0;
 }
 
 .content-container p {
-  font-size: 32px;
+  font-size: 3vw;
+  max-font-size: 32px;
   font-weight: 300;
-  letter-spacing: 0;
-  line-height: 100%;
+  line-height: 1;
   text-shadow: 0px 2px 2.5px rgb(0, 0, 0);
+  margin-top: 1rem;
 }
 
-/* form */
-
+/* Login form container */
 .login-container {
   background: rgba(119, 119, 119, 0.183);
   backdrop-filter: blur(10px);
   border: 2px solid rgb(255, 255, 255);
   border-radius: 12px;
   padding: 30px 40px;
-  width: 45%;
+  width: 100%;
+  max-width: 450px; /* max width for larger screens */
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
+  box-sizing: border-box;
 }
+
 .form-label {
-  text-align: center;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
+  display: block;
+  text-align: center;
 }
-.input-group-text {
-  border: none;
-  cursor: default;
+
+/* Inputs */
+.input-group.mb-4 {
+  margin-bottom: 1.5rem;
+  position: relative;
 }
+
 .form-control {
   padding: 15px;
   background: white;
   border-radius: 20px !important;
   color: #333;
   width: 100% !important;
-  min-width: 650px !important;
+  min-width: 0 !important; /* remove fixed min-width */
+  box-sizing: border-box;
+  font-size: 1rem;
+  border: none;
 }
-.password-wrapper {
-  position: relative;
-}
-.username-wrapper {
-  position: relative; /* add this */
-}
+
+/* Icons inside inputs */
 .username-password,
 .toggle-password {
   position: absolute;
@@ -82,22 +87,77 @@ body {
   width: 24px;
   height: 24px;
   opacity: 0.6;
-  pointer-events: auto; /* ensure clickable */
-  z-index: 10; /* stay above inputs */
-}
-
-.toggle-password {
+  pointer-events: auto;
   cursor: pointer;
+  z-index: 10;
 }
 
+/* Login button */
 .btn-login {
   background-color: black;
   border-radius: 20px;
   width: 100%;
-  padding: 10px;
-  font-weight: 500;
+  padding: 12px;
+  font-weight: 300;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
 }
 
 .btn-login:hover {
   background-color: #333;
+}
+
+/* Media Queries */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .content-container {
+    margin: 100px 0 50px 0;
+  }
+  .content-container h1 {
+    font-size: 10vw;
+  }
+  .content-container p {
+    font-size: 5vw;
+  }
+  .login-container {
+    padding: 20px 25px;
+  }
+  .form-control {
+    font-size: 1rem;
+  }
+}
+
+/* Medium devices (tablets, 600px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .content-container {
+    margin: 150px 0 75px 0;
+  }
+  .content-container h1 {
+    font-size: 8vw;
+  }
+  .content-container p {
+    font-size: 4vw;
+  }
+  .login-container {
+    max-width: 400px;
+    padding: 25px 30px;
+  }
+}
+
+/* Large devices (laptops/desktops, 900px and up) */
+@media (min-width: 901px) {
+  .content-container {
+    margin: 250px 0 100px 0;
+  }
+  .content-container h1 {
+    font-size: 128px;
+  }
+  .content-container p {
+    font-size: 32px;
+  }
+  .login-container {
+    max-width: 450px;
+  }
 }
