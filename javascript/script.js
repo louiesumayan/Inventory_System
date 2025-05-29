@@ -10,9 +10,7 @@ $(document).ready(function () {
     const eyeClose = 'images/Icons/Eye_close.png';
     $(this).attr('src', type === 'password' ? eyeClose : eyeOpen);
   });
-});
 
-$(document).ready(function () {
   // Animate h1 sliding in from left
   $('.content-container h1').animate(
     { left: '0', opacity: 1 },
@@ -22,9 +20,7 @@ $(document).ready(function () {
 
   // Animate p sliding in from right
   $('.content-container p').animate({ right: '0', opacity: 1 }, 900, 'swing');
-});
 
-$(document).ready(function () {
   $('.login-container').animate(
     { top: '0', opacity: 1 },
     1000, // 1 second duration
