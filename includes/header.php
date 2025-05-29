@@ -9,6 +9,12 @@
  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
  <link rel="stylesheet" href="css/style.css">
  <link rel="icon" href="images/Logo.png" type="image/x-icon" />
+
+ <!-- fredoka font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
  <title><?php echo isset($page_title) ? $page_title : 'Inventory System' ?></title>
 </head>
 
