@@ -16,7 +16,8 @@ A personal project implementing a full-featured inventory management system usin
 - JavaScript (vanilla)  
 - MySQL (for database)  
 - HTML5 & CSS3
-- BS5  
+- BS5
+- JQUERY
 
 ## Design
 
