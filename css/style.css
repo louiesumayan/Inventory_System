@@ -11,6 +11,22 @@ body {
   box-sizing: border-box;
 }
 
+.content-container h1 {
+  position: relative;
+  left: -100%; /* start off-screen left */
+  opacity: 0;
+}
+
+.content-container p {
+  position: relative;
+  right: -100%; /* start off-screen right */
+  opacity: 0;
+}
+
+.content-container {
+  overflow-x: hidden; /* hide horizontal overflow to prevent scrollbar */
+}
+
 /* Content container */
 .content-container {
   text-align: center;
@@ -49,6 +65,12 @@ body {
   color: white;
   margin: 0 auto;
   box-sizing: border-box;
+}
+
+.login-container {
+  position: relative;
+  top: 100%; /* start off-screen below */
+  opacity: 0;
 }
 
 .form-label {

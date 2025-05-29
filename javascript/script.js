@@ -11,3 +11,23 @@ $(document).ready(function () {
     $(this).attr('src', type === 'password' ? eyeClose : eyeOpen);
   });
 });
+
+$(document).ready(function () {
+  // Animate h1 sliding in from left
+  $('.content-container h1').animate(
+    { left: '0', opacity: 1 },
+    600, // duration 1 second
+    'swing'
+  );
+
+  // Animate p sliding in from right
+  $('.content-container p').animate({ right: '0', opacity: 1 }, 900, 'swing');
+});
+
+$(document).ready(function () {
+  $('.login-container').animate(
+    { top: '0', opacity: 1 },
+    1000, // 1 second duration
+    'swing'
+  );
+});
