@@ -1,23 +1,51 @@
 body,
 html {
   height: 100vh;
-  background-color: #121212;
+  background-color: #1d1d22;
   color: white;
+  font-family: 'fredoka';
 }
 .sidebar {
-  background-color: #1e1e1e;
+  background-color: #111116;
   min-width: 220px;
   height: 90vh;
   padding: 20px;
   display: flex;
   flex-direction: column;
   margin: 15px;
+  border-radius: 12px;
 }
+
+.logo-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
 .sidebar .logo {
-  font-weight: 700;
+  font-weight: 300;
   font-size: 18px;
-  margin-bottom: 40px;
 }
+
+.logo-home,
+.logo-sales,
+.logo-settings {
+  display: flex;
+  justify-content: flex-start; /* better than 'start' */
+  align-items: center;
+  text-align: left;
+  gap: 8px; /* spacing between icon and text */
+}
+
+.sidebar .logo-img .logo-bm {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
 .sidebar nav h6 {
   color: #999;
   margin-top: 20px;
@@ -25,16 +53,39 @@ html {
   font-weight: 500;
   font-size: 0.85rem;
 }
+
+/* Fix anchor styles */
 .sidebar nav a {
   color: white;
   text-decoration: none;
   display: block;
-  padding: 5px 0;
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 4px;
+  font-weight: 300;
+  margin: 25px 0;
+}
+
+/* Hover effect on anchors wrapping .logo-sales, and on .logo-home, .logo-settings */
+.sidebar nav a:hover > .logo-sales,
+.logo-home:hover,
+.logo-settings:hover {
+  background-color: #c71a14;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
   cursor: pointer;
 }
-.sidebar nav a.active {
-  font-weight: 700;
+
+.settings-layout {
+  margin-top: 125px;
 }
+
+/* Spacing for sales items */
+.logo-sales {
+  margin-bottom: 15px;
+}
+
 .main-content {
   flex-grow: 1;
   padding: 30px;
@@ -45,42 +96,51 @@ html {
   color: black;
   border-radius: 6px;
   padding: 15px 20px;
-  min-width: 130px;
+  min-width: 230px;
   text-align: center;
-  font-weight: 700;
+  font-weight: 500;
+  text-align: left;
 }
 .card-value small {
   display: block;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 0.85rem;
   margin-bottom: 5px;
   color: #555;
 }
 .table-section {
-  background: #1e1e1e;
+  background: white;
   border-radius: 10px;
-  padding: 20px;
   margin-bottom: 30px;
+  padding: 20px;
 }
+
 .table-section h5 {
-  margin-bottom: 15px;
+  color: black;
 }
 .table thead th {
-  color: white;
-  font-weight: 600;
+  color: #7d7d7d;
+  font-weight: 500;
   font-size: 0.9rem;
+  border-bottom: 1px solid #c4c4c4cc !important;
+  border-top: 1px solid #c4c4c4cc;
 }
+
 .table tbody td {
-  color: white;
+  color: black;
   font-size: 0.85rem;
   vertical-align: middle;
+  font-weight: 500;
+}
+tbody tr:last-child td {
+  border-bottom: 1px solid #c4c4c4cc;
 }
 .status-badge {
   padding: 3px 8px;
   border-radius: 12px;
   font-size: 0.75rem;
-  font-weight: 700;
-  color: white;
+  font-weight: 500;
+  color: black;
 }
 .status-red {
   background-color: #d9534f;
