@@ -1,11 +1,16 @@
 <main class="main-content flex-grow-1">
 
  <!-- pages -->
+ <?php
+ // Check if 'page' is set in the URL, otherwise set a default value
+ if (isset($_GET['page'])):
+  $pages = $_GET['page'];
+ else:
+  $pages = 'Dashboard'; // Default page when no 'page' parameter is set
+ endif;
+ ?>
 
- <?php if (isset($_GET['page'])): ?>
-  <?php $pages = $_GET['page']; ?>
-  <h2 class='mb-4'><?php echo $pages; ?></h2>
- <?php endif ?>
+ <h2 class='mb-4'><?php echo $pages; ?></h2>
 
  <?php
 
