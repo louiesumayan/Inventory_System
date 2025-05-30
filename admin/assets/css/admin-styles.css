@@ -1,0 +1,90 @@
+body,
+html {
+  height: 100vh;
+  background-color: #121212;
+  color: white;
+}
+.sidebar {
+  background-color: #1e1e1e;
+  min-width: 220px;
+  height: 90vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+.sidebar .logo {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.sidebar nav h6 {
+  color: #999;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+.sidebar nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+  cursor: pointer;
+}
+.sidebar nav a.active {
+  font-weight: 700;
+}
+.main-content {
+  flex-grow: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+.card-value {
+  background: white;
+  color: black;
+  border-radius: 6px;
+  padding: 15px 20px;
+  min-width: 130px;
+  text-align: center;
+  font-weight: 700;
+}
+.card-value small {
+  display: block;
+  font-weight: 500;
+  font-size: 0.85rem;
+  margin-bottom: 5px;
+  color: #555;
+}
+.table-section {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.table-section h5 {
+  margin-bottom: 15px;
+}
+.table thead th {
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.table tbody td {
+  color: white;
+  font-size: 0.85rem;
+  vertical-align: middle;
+}
+.status-badge {
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: white;
+}
+.status-red {
+  background-color: #d9534f;
+}
+.status-orange {
+  background-color: #f0ad4e;
+}
