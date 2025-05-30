@@ -1,5 +1,5 @@
 <?php $currentPage = "Dashboard" ?>
-
+<h2>Dashboard</h2>
 
 <div class="d-flex gap-3 mb-5 flex-wrap justify-content-between">
  <div class="card-value">

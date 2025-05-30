@@ -10,7 +10,6 @@
  endif;
  ?>
 
- <h2 class='mb-4'><?php echo $pages; ?></h2>
 
  <?php
 

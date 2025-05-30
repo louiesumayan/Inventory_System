@@ -1,1 +1,1 @@
-<h1>Invetory</h1>
+<h2>Inventory</h2>

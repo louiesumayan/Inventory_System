@@ -3,7 +3,7 @@ html {
   height: 100vh;
   background-color: #1d1d22;
   color: white;
-  font-family: 'fredoka';
+  font-family: 'DM Sans', sans-serif;
 }
 .sidebar {
   background-color: #111116;
@@ -93,6 +93,7 @@ html {
   margin-bottom: 15px;
 }
 
+/* content css */
 .main-content {
   flex-grow: 1;
   padding: 30px;

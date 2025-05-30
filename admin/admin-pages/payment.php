@@ -1,1 +1,1 @@
-<h1>Payment</h1>
+<h2>Payment</h2>
