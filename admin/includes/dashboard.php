@@ -1,4 +1,5 @@
-<h2 class="mb-4">Dashboard</h2>
+<?php $currentPage = "Dashboard" ?>
+
 
 <div class="d-flex gap-3 mb-5 flex-wrap justify-content-between">
  <div class="card-value">

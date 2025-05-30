@@ -36,7 +36,7 @@ html {
   justify-content: flex-start; /* better than 'start' */
   align-items: center;
   text-align: left;
-  gap: 8px; /* spacing between icon and text */
+  gap: 10px; /* spacing between icon and text */
 }
 
 .sidebar .logo-img .logo-bm {
@@ -63,7 +63,7 @@ html {
   transition: all 0.2s ease-in-out;
   border-radius: 4px;
   font-weight: 300;
-  margin: 25px 0;
+  margin: 15px 0;
 }
 
 /* Hover effect on anchors wrapping .logo-sales, and on .logo-home, .logo-settings */
@@ -77,8 +77,15 @@ html {
   cursor: pointer;
 }
 
+.logo-sales,
+.logo-home,
+.logo-settings {
+  padding: 10px 0;
+  padding-left: 15px;
+}
+
 .settings-layout {
-  margin-top: 125px;
+  margin-top: 190px;
 }
 
 /* Spacing for sales items */
