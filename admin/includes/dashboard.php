@@ -77,6 +77,194 @@
  <div id="chart_div"></div>
 </div>
 
+<section class="dashboard-tables">
+ <div class="table-card">
+  <h2>Expiring Soon</h2>
+  <div class="table-wrapper">
+   <table>
+    <thead>
+     <tr>
+      <th>Customer Name</th>
+      <th>End</th>
+      <th>Product</th>
+      <th>Duration</th>
+      <th>Agent</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>Brian Pable Sumayan</td>
+      <td><span class="tag tag-expiring">May 30 2025</span></td>
+      <td>GPT</td>
+      <td>3 mo</td>
+      <td>princes</td>
+     </tr>
+     <tr>
+      <td>Princes Sumayan</td>
+      <td><span class="tag tag-expiring">May 30 2025</span></td>
+      <td>GPT</td>
+      <td>3 mo</td>
+      <td>princes</td>
+     </tr>
+     <tr>
+      <td>Princes Sumayan</td>
+      <td><span class="tag tag-warning">May 31 2025</span></td>
+      <td>GPT</td>
+      <td>3 mo</td>
+      <td>princes</td>
+     </tr>
+     <tr>
+      <td>Brian Pable Sumayan</td>
+      <td><span class="tag tag-expiring">May 30 2025</span></td>
+      <td>GPT</td>
+      <td>3 mo</td>
+      <td>princes</td>
+     </tr>
+     <tr>
+      <td>Princes Sumayan</td>
+      <td><span class="tag tag-expiring">May 30 2025</span></td>
+      <td>GPT</td>
+      <td>3 mo</td>
+      <td>princes</td>
+     </tr>
+     <tr>
+      <td>Princes Sumayan</td>
+      <td><span class="tag tag-warning">May 31 2025</span></td>
+      <td>GPT</td>
+      <td>3 mo</td>
+      <td>princes</td>
+     </tr>
+     <tr>
+      <td>Brian Pable Sumayan</td>
+      <td><span class="tag tag-expiring">May 30 2025</span></td>
+      <td>GPT</td>
+      <td>3 mo</td>
+      <td>princes</td>
+     </tr>
+     <tr>
+      <td>Princes Sumayan</td>
+      <td><span class="tag tag-expiring">May 30 2025</span></td>
+      <td>GPT</td>
+      <td>3 mo</td>
+      <td>princes</td>
+     </tr>
+     <tr>
+      <td>Princes Sumayan</td>
+      <td><span class="tag tag-warning">May 31 2025</span></td>
+      <td>GPT</td>
+      <td>3 mo</td>
+      <td>princes</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </div>
+
+ <div class="table-card">
+  <h2>Recent Transaction</h2>
+  <div class="table-wrapper">
+   <table>
+    <thead>
+     <tr>
+      <th>Customer Name</th>
+      <th>End</th>
+      <th>Product</th>
+      <th>Duration</th>
+      <th>Agent</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>Brian Pable Sumayan</td>
+      <td><span class="tag tag-recent">May 30 2025</span></td>
+      <td>GPT</td>
+      <td>3 mo</td>
+      <td>princes</td>
+     </tr>
+     <tr>
+      <td>Princes Sumayan</td>
+      <td><span class="tag tag-recent">May 30 2025</span></td>
+      <td>GPT</td>
+      <td>3 mo</td>
+      <td>dindin</td>
+     </tr>
+     <tr>
+      <td>Princes Sumayan</td>
+      <td><span class="tag tag-recent">May 30 2025</span></td>
+      <td>GPT</td>
+      <td>3 mo</td>
+      <td>micah</td>
+     </tr>
+
+     <tr>
+      <td>Brian Pable Sumayan</td>
+      <td><span class="tag tag-recent">May 30 2025</span></td>
+      <td>GPT</td>
+      <td>3 mo</td>
+      <td>princes</td>
+     </tr>
+     <tr>
+      <td>Princes Sumayan</td>
+      <td><span class="tag tag-recent">May 30 2025</span></td>
+      <td>GPT</td>
+      <td>3 mo</td>
+      <td>dindin</td>
+     </tr>
+     <tr>
+      <td>Princes Sumayan</td>
+      <td><span class="tag tag-recent">May 30 2025</span></td>
+      <td>GPT</td>
+      <td>3 mo</td>
+      <td>micah</td>
+     </tr>
+     <tr>
+      <td>Brian Pable Sumayan</td>
+      <td><span class="tag tag-recent">May 30 2025</span></td>
+      <td>GPT</td>
+      <td>3 mo</td>
+      <td>princes</td>
+     </tr>
+     <tr>
+      <td>Princes Sumayan</td>
+      <td><span class="tag tag-recent">May 30 2025</span></td>
+      <td>GPT</td>
+      <td>3 mo</td>
+      <td>dindin</td>
+     </tr>
+     <tr>
+      <td>Princes Sumayan</td>
+      <td><span class="tag tag-recent">May 30 2025</span></td>
+      <td>GPT</td>
+      <td>3 mo</td>
+      <td>micah</td>
+     </tr>
+     <tr>
+      <td>Brian Pable Sumayan</td>
+      <td><span class="tag tag-recent">May 30 2025</span></td>
+      <td>GPT</td>
+      <td>3 mo</td>
+      <td>princes</td>
+     </tr>
+     <tr>
+      <td>Princes Sumayan</td>
+      <td><span class="tag tag-recent">May 30 2025</span></td>
+      <td>GPT</td>
+      <td>3 mo</td>
+      <td>dindin</td>
+     </tr>
+     <tr>
+      <td>Princes Sumayan</td>
+      <td><span class="tag tag-recent">May 30 2025</span></td>
+      <td>GPT</td>
+      <td>3 mo</td>
+      <td>micah</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </div>
+</section>
+
 
 
 
