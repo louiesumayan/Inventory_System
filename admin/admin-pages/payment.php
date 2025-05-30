@@ -1,1 +1,2 @@
-<h2>Payment</h2>
+<?php $currentPage = "Payments" ?>
+<?php include './includes/top-bar.php' ?>

@@ -8,7 +8,7 @@ html {
 .sidebar {
   background-color: #111116;
   min-width: 220px;
-  height: 90vh;
+  height: 95vh;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -85,7 +85,40 @@ html {
 }
 
 .settings-layout {
-  margin-top: 190px;
+  margin-top: 240px;
+}
+
+/* top bar */
+.top-bar {
+  background-color: #111116;
+  padding: 15px;
+  border-radius: 12px;
+  margin: 0 0 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a.profile-link {
+  text-decoration: none;
+  color: white;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+a.profile-link p {
+  margin: 0;
+}
+
+a.profile-link img {
+  background-color: #ffffffcc;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  border: 2px solid #7c8086cc;
 }
 
 /* Spacing for sales items */
@@ -96,18 +129,23 @@ html {
 /* content css */
 .main-content {
   flex-grow: 1;
-  padding: 30px;
+  padding: 15px 30px;
   overflow-y: auto;
 }
+/* card */
 .card-value {
   background: white;
   color: black;
   border-radius: 6px;
   padding: 15px 20px;
-  min-width: 230px;
+  min-width: 260px;
   text-align: center;
   font-weight: 500;
   text-align: left;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+  align-items: center;
 }
 .card-value small {
   display: block;
@@ -116,43 +154,36 @@ html {
   margin-bottom: 5px;
   color: #555;
 }
-.table-section {
-  background: white;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  padding: 20px;
+
+.card-value > img {
+  background-color: #e9b961;
+  border-radius: 30px;
+  padding: 10px;
+}
+.card-value .card-container .info {
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+  font-weight: 500;
+}
+.card-value .card-container .graph-info {
+  color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 300;
 }
 
-.table-section h5 {
-  color: black;
-}
-.table thead th {
-  color: #7d7d7d;
-  font-weight: 500;
-  font-size: 0.9rem;
-  border-bottom: 1px solid #c4c4c4cc !important;
-  border-top: 1px solid #c4c4c4cc;
+/* chart */
+#chart_container {
+  width: 100%;
+  max-width: 100%;
 }
 
-.table tbody td {
-  color: black;
-  font-size: 0.85rem;
-  vertical-align: middle;
-  font-weight: 500;
-}
-tbody tr:last-child td {
-  border-bottom: 1px solid #c4c4c4cc;
-}
-.status-badge {
-  padding: 3px 8px;
-  border-radius: 12px;
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: black;
-}
-.status-red {
-  background-color: #d9534f;
-}
-.status-orange {
-  background-color: #f0ad4e;
+#chart_div {
+  width: 100% !important; /* Force width 100% */
+  height: 370px;
+  border-radius: 10px; /* rounded corners */
+  overflow: hidden;
 }

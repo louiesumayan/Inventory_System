@@ -1,1 +1,2 @@
-<h2>Admin</h2>
+<?php $currentPage = "Admin" ?>
+<?php include './includes/top-bar.php' ?>

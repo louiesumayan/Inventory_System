@@ -1,1 +1,2 @@
-<h2>Orders</h2>
+<?php $currentPage = "Orders" ?>
+<?php include './includes/top-bar.php' ?>
