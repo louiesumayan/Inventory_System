@@ -5,7 +5,7 @@
 
 <?php include 'includes/sidebar.php' ?>
 <!-- Main Content -->
-<?php include 'includes/dashboard-content.php' ?>
+<?php include 'includes/content.php' ?>
 <!-- End of Main Content -->
 <?php include 'includes/sidebar-footer.php' ?>
 
