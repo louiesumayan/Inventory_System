@@ -39,10 +39,10 @@
      </div>
     </a>
 
-    <a href="<?php echo $_SERVER['PHP_SELF'] ?>?page=Sales">
+    <a href="<?php echo $_SERVER['PHP_SELF'] ?>?page=Finance">
      <div class="logo-sales">
       <img class="logo-bm" src="../images/Icons/Sales.png" alt="">
-      Recent sales
+      Finance
      </div>
     </a>
 

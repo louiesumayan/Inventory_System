@@ -292,3 +292,160 @@ tbody tr:hover {
   background-color: #d0f0d0;
   color: #2a5a2a;
 }
+
+/* inventory css */
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-input {
+  position: relative;
+}
+
+.search-input .fa-magnifying-glass {
+  position: absolute;
+  top: 15px;
+  color: #7c8086cc;
+  right: 18px;
+  width: 18.75px;
+  height: 18.75px;
+  font-size: 22px;
+}
+
+.search-input input {
+  padding: 14px 45px 14px 18px;
+  width: 300px;
+  height: 55px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background-color: #f3f3f3;
+}
+
+.search-container button {
+  padding: 14px 22px 14px 22px;
+  width: 214px;
+  height: 55px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  color: #e9f6eb;
+  background-color: #519862;
+}
+
+/* inventory-section.css */
+
+/* Container for the entire inventory table */
+.inventory-section {
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: 10px auto;
+  /* padding: 1rem; */
+}
+
+/* Outer wrapper giving a subtle card look */
+.inventory-table {
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header row styling */
+.inventory-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 0.5fr;
+  padding: 0.75rem 1rem;
+  background-color: #f6f8fa;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333333;
+  border-radius: 10px;
+  color: #000000;
+}
+
+/* Scrollable body container, fixed height to fit 10 rows approx. */
+.inventory-body {
+  height: 270px;
+  max-height: 270px; /* Adjust as needed so that roughly 10 rows fit */
+  overflow-y: auto;
+}
+
+/* Each row in the table body */
+.inventory-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  color: #444444;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.inventory-row:last-child {
+  border-bottom: none;
+}
+
+/* Column-specific utility classes */
+.col {
+  display: flex;
+  align-items: center;
+}
+
+/* Product column: aligns icon + name */
+.col.product {
+  gap: 0.5rem;
+}
+
+/* Placeholder for icons */
+.product-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Style for product name text */
+.product-name {
+  font-weight: 500;
+}
+
+/* Duration, Stock, Price, Status inherit default .col styling */
+
+/* Status column: center the tag */
+.col.status {
+  justify-content: flex-start;
+}
+
+/* Action column: center action button */
+.col.action {
+  justify-content: center;
+}
+
+/* Three‐dot action button */
+.action-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #6b6b6b;
+}
+
+.action-btn:hover {
+  color: #333333;
+}
+
+/* Example row hover effect */
+.inventory-row:hover {
+  background-color: #fafafa;
+}
+
+.inventory-body .inventory-row > div {
+  color: #7c8086cc;
+}

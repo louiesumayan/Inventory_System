@@ -30,8 +30,8 @@
       include '../admin/admin-pages/payment.php';
       break;
 
-    case 'Sales':
-      include '../admin/admin-pages/sales.php';
+    case 'Finance':
+      include '../admin/admin-pages/finance.php';
       break;
 
     case 'Admin':

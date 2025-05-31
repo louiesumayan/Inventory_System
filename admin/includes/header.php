@@ -20,6 +20,13 @@
   href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fredoka:wght@300..700&display=swap"
   rel="stylesheet">
 
+ <!-- fontawesome -->
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+ <!-- google api graph -->
+
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
  <link rel="stylesheet" href="./assets/css/<?php echo isset($page_style) ? $page_style : 'admin-styles.css' ?>">
  <title><?php echo isset($page_title) ? $page_title : 'Admin Dashboard' ?></title>
