@@ -206,7 +206,7 @@
   <input placeholder="Search" type="text" name="serach" id="">
   <i class="fa-solid fa-magnifying-glass"></i>
  </div>
- <button class="add-product" name="add-product"><i class="fa-solid fa-plus"></i> Add Product</button>
+ <button class="add-product" name="add-product"><i class="fa-solid fa-plus"></i> Add Account</button>
 </section>
 
 <section class="inventory-section">

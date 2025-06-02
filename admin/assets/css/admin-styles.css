@@ -8,7 +8,7 @@ html {
 .sidebar {
   background-color: #111116;
   min-width: 220px;
-  height: 95vh;
+  height: 95vh; /* opt. can be hide */
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -225,6 +225,14 @@ a.profile-link img {
   height: 245px; /* max height for scrolling */
   overflow-x: auto; /* horizontal scroll if needed */
   border-radius: 8px;
+  /* Firefox */
+  scrollbar-width: none;
+  /* IE 10+ */
+  -ms-overflow-style: none;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 /* Table fixed layout to prevent overflow */
@@ -375,6 +383,15 @@ tbody tr:hover {
   height: 270px;
   max-height: 270px; /* Adjust as needed so that roughly 10 rows fit */
   overflow-y: auto;
+  /* Firefox */
+  scrollbar-width: none;
+  /* IE 10+ */
+  -ms-overflow-style: none;
+}
+
+/* Chrome, Safari, Opera */
+.inventory-body::-webkit-scrollbar {
+  display: none;
 }
 
 /* Each row in the table body */
@@ -448,4 +465,476 @@ tbody tr:hover {
 
 .inventory-body .inventory-row > div {
   color: #7c8086cc;
+}
+
+/* create-order-section.css */
+
+/* ---------------------------------------------------
+   1. Container for the entire “create‐order” table
+   --------------------------------------------------- */
+.c-order-section {
+  width: 100%;
+  margin: 10px auto;
+  /* (You can add max‐width if you want to constrain overall width) */
+}
+
+/* ---------------------------------------------------
+     2. Outer wrapper giving the subtle “card” look
+     --------------------------------------------------- */
+.c-order-table {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow: hidden;
+  height: 745px;
+  min-height: 745px;
+}
+
+/* ---------------------------------------------------
+     3. Header row styling (10 columns)
+     --------------------------------------------------- */
+.c-order-header {
+  display: grid;
+  grid-template-columns:
+    1.5fr /* Product */
+    1fr /* Agent */
+    1fr /* MOP */
+    1fr /* Duration */
+    1fr /* Price */
+    1fr /* Start */
+    1fr /* End */
+    2fr /* Customer Name */
+    2fr /* Message Link */
+    0.5fr; /* Action */
+  padding: 0.75rem 1rem;
+  background-color: #f6f8fa;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #000000;
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+
+/* ---------------------------------------------------
+     4. Scrollable body container (fit ~10 rows)
+     --------------------------------------------------- */
+.c-order-body {
+  min-height: 680px !important; /* Tweak until exactly 10 rows fit without cutting off */
+  overflow-y: auto;
+  /* Firefox */
+  scrollbar-width: none;
+  /* IE 10+ */
+  -ms-overflow-style: none;
+}
+
+.c-order-body::-webkit-scrollbar {
+  display: none;
+}
+
+/* ---------------------------------------------------
+     5. Each row in the table body
+     --------------------------------------------------- */
+.c-order-row {
+  display: grid;
+  grid-template-columns:
+    1.5fr /* Product */
+    1fr /* Agent */
+    1fr /* MOP */
+    1fr /* Duration */
+    1fr /* Price */
+    1fr /* Start */
+    1fr /* End */
+    2fr /* Customer Name */
+    2fr /* Message Link */
+    0.5fr; /* Action */
+  align-items: center;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  color: #444444;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.c-order-row:last-child {
+  border-bottom: none;
+}
+
+/* ---------------------------------------------------
+     6. Column-specific utility classes
+     --------------------------------------------------- */
+.col {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* 6.1. Product column: icon + text */
+.col-product {
+  /* inherits .col’s flex + gap */
+}
+
+/* 6.2. Agent “badge” styling */
+.agent-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: #e0e0ff;
+  color: #3f3fa7;
+}
+
+/* micah */
+.agent-micah {
+  background-color: #f6e9f4;
+  color: #985189;
+}
+
+/* princes  */
+.agent-princes {
+  background-color: #f5ebe0;
+  color: #8d6e63;
+}
+
+/* dindin  */
+.agent-dindin {
+  background-color: #e0f2f1;
+  color: #00796b;
+}
+
+/* brian  */
+.agent-brian {
+  background-color: #ede9f6;
+  color: #5e5198;
+}
+
+/* louie  */
+.agent-louie {
+  background-color: #fffde7;
+  color: #f57f17;
+}
+
+/* ysh  */
+.agent-ysh {
+  background-color: #fce4ec;
+  color: #ad1457;
+}
+
+/* 6.4. Link styling in message column */
+.col-msglink a {
+  color: #1b6ec2;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.col-msglink a:hover {
+  text-decoration: underline;
+}
+
+/* 6.5. Action column: center the button */
+.col-action {
+  justify-content: center;
+}
+
+/* ---------------------------------------------------
+     7. Row-icon (24×24) and text styling
+     --------------------------------------------------- */
+.row-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.row-text {
+  font-weight: 500;
+}
+
+/* ---------------------------------------------------
+     8. “Three-dot” action button
+     --------------------------------------------------- */
+
+/* ---------------------------------------------------
+     9. Hover effect on each body row
+     --------------------------------------------------- */
+.c-order-row:hover {
+  background-color: #fafafa;
+}
+
+/* ---------------------------------------------------
+   10. (Optional) Make text lighter in body cells
+     --------------------------------------------------- */
+.c-order-body .c-order-row > div {
+  color: #7c8086cc;
+}
+
+/* ---------------------------------------------------
+   11. Responsive adjustments (small screens)
+     --------------------------------------------------- */
+@media (max-width: 768px) {
+  .c-order-header,
+  .c-order-row {
+    grid-template-columns:
+      1.5fr /* Product */
+      1fr /* Agent */
+      1fr /* MOP */
+      1fr /* Duration */
+      1fr /* Price */
+      1fr /* Start */
+      1fr /* End */
+      1.5fr /* Customer Name */
+      1.5fr /* Message Link */
+      0.5fr; /* Action */
+  }
+  .c-order-header {
+    font-size: 0.85rem;
+  }
+  .c-order-row {
+    font-size: 0.85rem;
+  }
+  .row-text {
+    font-size: 0.9rem;
+  }
+  .agent-badge {
+    font-size: 0.75rem;
+  }
+  .date-green,
+  .date-red {
+    font-size: 0.75rem;
+  }
+}
+
+/* payment-section.css */
+
+/* ----------------------------------------------------------
+   1. Wrapper & Grid Layout for All Cards
+   ---------------------------------------------------------- */
+.payment-section {
+  overflow-y: auto;
+  width: 100%;
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 12px;
+  height: 735px;
+  min-height: 735px;
+  /* Firefox */
+  scrollbar-width: none;
+  /* IE 10+ */
+  -ms-overflow-style: none;
+}
+
+.payment-section::-webkit-scrollbar {
+  display: none;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+/* ----------------------------------------------------------
+     2. Individual Card Styling
+     ---------------------------------------------------------- */
+.payment-card {
+  background-color: #f6f8fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  position: relative;
+}
+
+/* ----------------------------------------------------------
+     3. Card Header (Avatar, Badge, Name, Edit Button)
+     ---------------------------------------------------------- */
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.agent-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: #e0e0ff; /* default fallback */
+  color: #3f3fa7; /* default fallback text */
+}
+
+/* Specific agent colors (override default) */
+.agent-brian {
+  background-color: #ede7f6;
+  color: #5e35b1;
+}
+
+.agent-louie {
+  background-color: #fffde7;
+  color: #f57f17;
+}
+
+.agent-micah {
+  background-color: #f3e5f5;
+  color: #6a1b9a;
+}
+.agent-princes {
+  background-color: #f5ebe0;
+  color: #8d6e63;
+}
+.agent-dindin {
+  background-color: #e0f2f1;
+  color: #00796b;
+}
+.agent-ysh {
+  background-color: #fce4ec;
+  color: #ad1457;
+}
+
+.user-name {
+  flex: 1;
+  margin: 0 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222222;
+}
+
+.edit-button {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 4px 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #333333;
+}
+
+/* ----------------------------------------------------------
+     4. Payment Options Box
+     ---------------------------------------------------------- */
+.payment-options {
+  background-color: #f7f8f9;
+  border-radius: 6px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.payment-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 8px 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.payment-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.payment-name {
+  flex: 1;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Gcash and SeaBank color accents */
+.payment-name.gcash {
+  color: #0055c8;
+}
+
+.payment-name.seabank {
+  color: #ff8c00;
+}
+
+.payment-number {
+  font-size: 0.9rem;
+  color: #333333;
+}
+
+.copy-button {
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.copy-button img {
+  width: 16px;
+  height: 16px;
+}
+
+.copy-button:hover img {
+  opacity: 0.7;
+}
+
+/* ----------------------------------------------------------
+     5. “Add payment option” Button
+     ---------------------------------------------------------- */
+.add-option-button {
+  background-color: #a0a4a8;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+}
+
+.add-option-button:hover {
+  background-color: #777a7d;
+}
+
+/* ----------------------------------------------------------
+     6. Responsive Adjustments
+     ---------------------------------------------------------- */
+@media (max-width: 600px) {
+  .payment-card {
+    padding: 12px;
+  }
+  .user-name {
+    font-size: 0.95rem;
+  }
+  .payment-row {
+    padding: 6px 10px;
+  }
+  .payment-name,
+  .payment-number {
+    font-size: 0.85rem;
+  }
+  .add-option-button {
+    font-size: 0.85rem;
+    padding: 6px 0;
+  }
 }

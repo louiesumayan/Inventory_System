@@ -97,63 +97,63 @@
       <td><span class="tag tag-expiring">May 30 2025</span></td>
       <td>GPT</td>
       <td>3 mo</td>
-      <td>princes</td>
+      <td><span class="agent-badge agent-princes">princes</span></td>
      </tr>
      <tr>
       <td>Princes Sumayan</td>
       <td><span class="tag tag-expiring">May 30 2025</span></td>
       <td>GPT</td>
       <td>3 mo</td>
-      <td>princes</td>
+      <td><span class="agent-badge agent-princes">princes</span></td>
      </tr>
      <tr>
       <td>Princes Sumayan</td>
       <td><span class="tag tag-warning">May 31 2025</span></td>
       <td>GPT</td>
       <td>3 mo</td>
-      <td>princes</td>
+      <td><span class="agent-badge agent-princes">princes</span></td>
      </tr>
      <tr>
       <td>Brian Pable Sumayan</td>
       <td><span class="tag tag-expiring">May 30 2025</span></td>
       <td>GPT</td>
       <td>3 mo</td>
-      <td>princes</td>
+      <td><span class="agent-badge agent-princes">princes</span></td>
      </tr>
      <tr>
       <td>Princes Sumayan</td>
       <td><span class="tag tag-expiring">May 30 2025</span></td>
       <td>GPT</td>
       <td>3 mo</td>
-      <td>princes</td>
+      <td><span class="agent-badge agent-princes">princes</span></td>
      </tr>
      <tr>
       <td>Princes Sumayan</td>
       <td><span class="tag tag-warning">May 31 2025</span></td>
       <td>GPT</td>
       <td>3 mo</td>
-      <td>princes</td>
+      <td><span class="agent-badge agent-princes">princes</span></td>
      </tr>
      <tr>
       <td>Brian Pable Sumayan</td>
       <td><span class="tag tag-expiring">May 30 2025</span></td>
       <td>GPT</td>
       <td>3 mo</td>
-      <td>princes</td>
+      <td><span class="agent-badge agent-princes">princes</span></td>
      </tr>
      <tr>
       <td>Princes Sumayan</td>
       <td><span class="tag tag-expiring">May 30 2025</span></td>
       <td>GPT</td>
       <td>3 mo</td>
-      <td>princes</td>
+      <td><span class="agent-badge agent-princes">princes</span></td>
      </tr>
      <tr>
       <td>Princes Sumayan</td>
       <td><span class="tag tag-warning">May 31 2025</span></td>
       <td>GPT</td>
       <td>3 mo</td>
-      <td>princes</td>
+      <td><span class="agent-badge agent-princes">princes</span></td>
      </tr>
     </tbody>
    </table>
@@ -179,21 +179,21 @@
       <td><span class="tag tag-recent">May 30 2025</span></td>
       <td>GPT</td>
       <td>3 mo</td>
-      <td>princes</td>
+      <td><span class="agent-badge agent-princes">princes</span></td>
      </tr>
      <tr>
       <td>Princes Sumayan</td>
       <td><span class="tag tag-recent">May 30 2025</span></td>
       <td>GPT</td>
       <td>3 mo</td>
-      <td>dindin</td>
+      <td><span class="agent-badge agent-dindin">dindin</span></td>
      </tr>
      <tr>
       <td>Princes Sumayan</td>
       <td><span class="tag tag-recent">May 30 2025</span></td>
       <td>GPT</td>
       <td>3 mo</td>
-      <td>micah</td>
+      <td><span class="agent-badge agent-micah">micah</span></td>
      </tr>
 
      <tr>
@@ -201,63 +201,63 @@
       <td><span class="tag tag-recent">May 30 2025</span></td>
       <td>GPT</td>
       <td>3 mo</td>
-      <td>princes</td>
+      <td><span class="agent-badge agent-brian">brian</span></td>
      </tr>
      <tr>
       <td>Princes Sumayan</td>
       <td><span class="tag tag-recent">May 30 2025</span></td>
       <td>GPT</td>
       <td>3 mo</td>
-      <td>dindin</td>
+      <td><span class="agent-badge agent-louie">louie</span></td>
      </tr>
      <tr>
       <td>Princes Sumayan</td>
       <td><span class="tag tag-recent">May 30 2025</span></td>
       <td>GPT</td>
       <td>3 mo</td>
-      <td>micah</td>
+      <td><span class="agent-badge agent-ysh">ysh</span></td>
      </tr>
      <tr>
       <td>Brian Pable Sumayan</td>
       <td><span class="tag tag-recent">May 30 2025</span></td>
       <td>GPT</td>
       <td>3 mo</td>
-      <td>princes</td>
+      <td><span class="agent-badge agent-princes">princes</span></td>
      </tr>
      <tr>
       <td>Princes Sumayan</td>
       <td><span class="tag tag-recent">May 30 2025</span></td>
       <td>GPT</td>
       <td>3 mo</td>
-      <td>dindin</td>
+      <td><span class="agent-badge agent-princes">princes</span></td>
      </tr>
      <tr>
       <td>Princes Sumayan</td>
       <td><span class="tag tag-recent">May 30 2025</span></td>
       <td>GPT</td>
       <td>3 mo</td>
-      <td>micah</td>
+      <td><span class="agent-badge agent-princes">princes</span></td>
      </tr>
      <tr>
       <td>Brian Pable Sumayan</td>
       <td><span class="tag tag-recent">May 30 2025</span></td>
       <td>GPT</td>
       <td>3 mo</td>
-      <td>princes</td>
+      <td><span class="agent-badge agent-princes">princes</span></td>
      </tr>
      <tr>
       <td>Princes Sumayan</td>
       <td><span class="tag tag-recent">May 30 2025</span></td>
       <td>GPT</td>
       <td>3 mo</td>
-      <td>dindin</td>
+      <td><span class="agent-badge agent-princes">princes</span></td>
      </tr>
      <tr>
       <td>Princes Sumayan</td>
       <td><span class="tag tag-recent">May 30 2025</span></td>
       <td>GPT</td>
       <td>3 mo</td>
-      <td>micah</td>
+      <td><span class="agent-badge agent-princes">princes</span></td>
      </tr>
     </tbody>
    </table>
