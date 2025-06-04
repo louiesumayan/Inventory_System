@@ -307,6 +307,45 @@ tbody tr:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
+}
+
+.tab-container {
+  background-color: #111116;
+  flex: 1;
+  border-radius: 12px;
+}
+
+li.tab-list.active {
+  color: #a31717;
+  position: relative;
+}
+
+li.tab-list.active::after {
+  content: '';
+  position: absolute;
+  bottom: 1px; /* Position it below the tab */
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #a31717;
+  transform: rotate(180deg); /* Rotate the pseudo-element */
+  border-end-end-radius: 5px;
+  border-end-start-radius: 5px;
+}
+
+.tab-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.tab-container ul li {
+  cursor: pointer;
+  margin-left: 15px;
+  padding: 15px;
 }
 
 .search-input {
@@ -352,6 +391,12 @@ tbody tr:hover {
   /* max-width: 1200px; */
   margin: 10px auto;
   /* padding: 1rem; */
+  display: none;
+}
+
+.inventory-section.product.active,
+.inventory-section.account.active {
+  display: block;
 }
 
 /* Outer wrapper giving a subtle card look */
@@ -380,8 +425,8 @@ tbody tr:hover {
 
 /* Scrollable body container, fixed height to fit 10 rows approx. */
 .inventory-body {
-  height: 270px;
-  max-height: 270px; /* Adjust as needed so that roughly 10 rows fit */
+  height: 675px;
+  max-height: 685px; /* Adjust as needed so that roughly 10 rows fit */
   overflow-y: auto;
   /* Firefox */
   scrollbar-width: none;

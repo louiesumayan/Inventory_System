@@ -1,7 +1,14 @@
 <?php $currentPage = "Inventory" ?>
 <?php include './includes/top-bar.php' ?>
 
+<!-- search input -->
 <section class="search-container">
+ <div class="tab-container">
+  <ul>
+   <li class="tab-list active">Product Listed</li>
+   <li class="tab-list ">Account Listing</li>
+  </ul>
+ </div>
  <div class="search-input">
   <input placeholder="Search" type="text" name="serach" id="">
   <i class="fa-solid fa-magnifying-glass"></i>
@@ -10,7 +17,7 @@
 </section>
 
 <!-- inventory-product-section.html -->
-<section class="inventory-section">
+<section class="inventory-section product active">
  <div class="inventory-table">
   <!-- Table Header -->
   <div class="inventory-header">
@@ -201,17 +208,8 @@
 
 <!-- inventory-account-section.html -->
 
-<section class="search-container">
- <div class="search-input">
-  <input placeholder="Search" type="text" name="serach" id="">
-  <i class="fa-solid fa-magnifying-glass"></i>
- </div>
- <button class="add-product" name="add-product"><i class="fa-solid fa-plus"></i> Add Account</button>
-</section>
-
-<section class="inventory-section">
+<section class="inventory-section account ">
  <div class="inventory-table">
-  <!-- Table Header -->
   <div class="inventory-header">
    <div class="col product">Account</div>
    <div class="col duration">Phrase</div>
@@ -221,9 +219,7 @@
    <div class="col action">Action</div>
   </div>
 
-  <!-- Scrollable Body with 10 Rows -->
   <div class="inventory-body">
-   <!-- Row 1 -->
    <div class="inventory-row">
     <div class="col product">
      <img src="../images/Icons/canva.png" alt="GPT Icon" class="product-icon" />
@@ -240,7 +236,6 @@
     </div>
    </div>
 
-   <!-- Row 2 -->
    <div class="inventory-row">
     <div class="col product">
      <img src="../images/Icons/chat-gpt.png" alt="GPT Icon" class="product-icon" />
@@ -259,3 +254,6 @@
   </div>
  </div>
 </section>
+
+
+<script src="./assets/javascript/inventory.js"></script>
