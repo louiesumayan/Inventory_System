@@ -1,5 +1,6 @@
 const tab_list = document.querySelectorAll('.tab-list');
 const inventory_tabs = document.querySelectorAll('.inventory-section');
+const button_text = document.querySelector('.add-product');
 
 //add a eventlistener for each tab
 tab_list.forEach((tab) => {
@@ -17,9 +18,11 @@ tab_list.forEach((tab) => {
       if (tab.textContent === 'Product Listed') {
         inventory_tabs[1].classList.remove('active');
         inventory_tabs[0].classList.add('active');
+        button_text.innerHTML = '<i class="fa-solid fa-plus"></i> Add Product';
       } else if (tab.textContent === 'Account Listing') {
         inventory_tabs[0].classList.remove('active');
         inventory_tabs[1].classList.add('active');
+        button_text.innerHTML = '<i class="fa-solid fa-plus"></i> Add Account';
       }
     }
   });

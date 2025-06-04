@@ -254,6 +254,3 @@
   </div>
  </div>
 </section>
-
-
-<script src="./assets/javascript/inventory.js"></script>

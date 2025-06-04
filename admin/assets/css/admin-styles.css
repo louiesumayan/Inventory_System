@@ -552,7 +552,6 @@ li.tab-list.active::after {
     1fr /* Start */
     1fr /* End */
     2fr /* Customer Name */
-    2fr /* Message Link */
     0.5fr; /* Action */
   padding: 0.75rem 1rem;
   background-color: #f6f8fa;
@@ -593,7 +592,6 @@ li.tab-list.active::after {
     1fr /* Start */
     1fr /* End */
     2fr /* Customer Name */
-    2fr /* Message Link */
     0.5fr; /* Action */
   align-items: center;
   padding: 0.75rem 1rem;
@@ -607,7 +605,7 @@ li.tab-list.active::after {
 }
 
 /* ---------------------------------------------------
-     6. Column-specific utility classes
+    6. Column-specific utility classes
      --------------------------------------------------- */
 .col {
   display: flex;
@@ -616,8 +614,10 @@ li.tab-list.active::after {
 }
 
 /* 6.1. Product column: icon + text */
-.col-product {
-  /* inherits .col’s flex + gap */
+.col-start,
+.col-end,
+.col-customer {
+  justify-self: center;
 }
 
 /* 6.2. Agent “badge” styling */
@@ -729,8 +729,7 @@ li.tab-list.active::after {
       1fr /* Start */
       1fr /* End */
       1.5fr /* Customer Name */
-      1.5fr /* Message Link */
-      0.5fr; /* Action */
+      1.5fr; /* Action */
   }
   .c-order-header {
     font-size: 0.85rem;

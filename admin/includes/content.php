@@ -49,6 +49,7 @@
 
   ?>
 
+  <script src="./assets/javascript/inventory.js"></script>
 
 
 </main>

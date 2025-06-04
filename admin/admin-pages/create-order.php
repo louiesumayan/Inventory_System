@@ -1,22 +1,28 @@
-<?php $currentPage = "Orders" ?>
+<?php $currentPage = "Create Orders" ?>
 <?php include './includes/top-bar.php' ?>
 
+<!-- search input -->
 <section class="search-container">
+ <div class="tab-container">
+  <ul>
+   <li class="tab-list active">Recent Transaction</li>
+   <li class="tab-list ">Expiring Soon</li>
+  </ul>
+ </div>
  <div class="search-input">
   <input placeholder="Search" type="text" name="serach" id="">
   <i class="fa-solid fa-magnifying-glass"></i>
  </div>
- <button class="add-product" name="add-product"><i class="fa-solid fa-plus"></i> Add Order</button>
+ <button class="add-product" name="add-product"><i class="fa-solid fa-plus"></i> Add Product</button>
 </section>
 
-<!-- create order row and col -->
 
 <!-- create-order-section.html -->
 <section class="c-order-section">
  <div class="c-order-table">
   <!-- Table Header (10 columns) -->
   <div class="c-order-header">
-   <div class="col col-product">Product</div>
+   <div class="col col-product">Product Name</div>
    <div class="col col-agent">Agent</div>
    <div class="col col-mop">MOP</div>
    <div class="col col-duration">Duration</div>
@@ -24,7 +30,6 @@
    <div class="col col-start">Start</div>
    <div class="col col-end">End</div>
    <div class="col col-customer">Customer Name</div>
-   <div class="col col-msglink">Message Link</div>
    <div class="col col-action">Action</div>
   </div>
 
@@ -49,9 +54,6 @@
      <span class="tag tag-expiring">Aug 25 2025</span>
     </div>
     <div class="col col-customer">Brian Pable Sumayan</div>
-    <div class="col col-msglink">
-     <a href="https://business.facebook.com/..." target="_blank">https://business.facebook.com/...</a>
-    </div>
     <div class="col col-action">
      <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
     </div>
@@ -76,9 +78,6 @@
      <span class="tag tag-expiring">Aug 25 2025</span>
     </div>
     <div class="col col-customer">Brian Pable Sumayan</div>
-    <div class="col col-msglink">
-     <a href="https://business.facebook.com/..." target="_blank">https://business.facebook.com/...</a>
-    </div>
     <div class="col col-action">
      <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
     </div>
@@ -103,9 +102,6 @@
      <span class="tag tag-expiring">Aug 25 2025</span>
     </div>
     <div class="col col-customer">Brian Pable Sumayan</div>
-    <div class="col col-msglink">
-     <a href="https://business.facebook.com/..." target="_blank">https://business.facebook.com/...</a>
-    </div>
     <div class="col col-action">
      <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
     </div>
@@ -130,9 +126,6 @@
      <span class="tag tag-expiring">Aug 25 2025</span>
     </div>
     <div class="col col-customer">Brian Pable Sumayan</div>
-    <div class="col col-msglink">
-     <a href="https://business.facebook.com/..." target="_blank">https://business.facebook.com/...</a>
-    </div>
     <div class="col col-action">
      <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
     </div>
@@ -157,9 +150,6 @@
      <span class="tag tag-expiring">Aug 25 2025</span>
     </div>
     <div class="col col-customer">Brian Pable Sumayan</div>
-    <div class="col col-msglink">
-     <a href="https://business.facebook.com/..." target="_blank">https://business.facebook.com/...</a>
-    </div>
     <div class="col col-action">
      <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
     </div>
@@ -184,9 +174,6 @@
      <span class="tag tag-expiring">Aug 25 2025</span>
     </div>
     <div class="col col-customer">Brian Pable Sumayan</div>
-    <div class="col col-msglink">
-     <a href="https://business.facebook.com/..." target="_blank">https://business.facebook.com/...</a>
-    </div>
     <div class="col col-action">
      <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
     </div>
@@ -211,9 +198,6 @@
      <span class="tag tag-expiring">Aug 25 2025</span>
     </div>
     <div class="col col-customer">Brian Pable Sumayan</div>
-    <div class="col col-msglink">
-     <a href="https://business.facebook.com/..." target="_blank">https://business.facebook.com/...</a>
-    </div>
     <div class="col col-action">
      <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
     </div>
@@ -238,9 +222,6 @@
      <span class="tag tag-expiring">Aug 25 2025</span>
     </div>
     <div class="col col-customer">Brian Pable Sumayan</div>
-    <div class="col col-msglink">
-     <a href="https://business.facebook.com/..." target="_blank">https://business.facebook.com/...</a>
-    </div>
     <div class="col col-action">
      <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
     </div>
@@ -265,9 +246,6 @@
      <span class="tag tag-expiring">Aug 25 2025</span>
     </div>
     <div class="col col-customer">Brian Pable Sumayan</div>
-    <div class="col col-msglink">
-     <a href="https://business.facebook.com/..." target="_blank">https://business.facebook.com/...</a>
-    </div>
     <div class="col col-action">
      <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
     </div>
@@ -292,9 +270,6 @@
      <span class="tag tag-expiring">Aug 25 2025</span>
     </div>
     <div class="col col-customer">Brian Pable Sumayan</div>
-    <div class="col col-msglink">
-     <a href="https://business.facebook.com/..." target="_blank">https://business.facebook.com/...</a>
-    </div>
     <div class="col col-action">
      <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
     </div>
@@ -319,9 +294,6 @@
      <span class="tag tag-expiring">Aug 25 2025</span>
     </div>
     <div class="col col-customer">Brian Pable Sumayan</div>
-    <div class="col col-msglink">
-     <a href="https://business.facebook.com/..." target="_blank">https://business.facebook.com/...</a>
-    </div>
     <div class="col col-action">
      <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
     </div>
@@ -346,9 +318,6 @@
      <span class="tag tag-expiring">Aug 25 2025</span>
     </div>
     <div class="col col-customer">Brian Pable Sumayan</div>
-    <div class="col col-msglink">
-     <a href="https://business.facebook.com/..." target="_blank">https://business.facebook.com/...</a>
-    </div>
     <div class="col col-action">
      <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
     </div>
@@ -372,9 +341,6 @@
      <span class="tag tag-expiring">Aug 25 2025</span>
     </div>
     <div class="col col-customer">Brian Pable Sumayan</div>
-    <div class="col col-msglink">
-     <a href="https://business.facebook.com/..." target="_blank">https://business.facebook.com/...</a>
-    </div>
     <div class="col col-action">
      <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
     </div>
@@ -399,9 +365,6 @@
      <span class="tag tag-expiring">Aug 25 2025</span>
     </div>
     <div class="col col-customer">Brian Pable Sumayan</div>
-    <div class="col col-msglink">
-     <a href="https://business.facebook.com/..." target="_blank">https://business.facebook.com/...</a>
-    </div>
     <div class="col col-action">
      <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
     </div>
@@ -426,9 +389,6 @@
      <span class="tag tag-expiring">Aug 25 2025</span>
     </div>
     <div class="col col-customer">Brian Pable Sumayan</div>
-    <div class="col col-msglink">
-     <a href="https://business.facebook.com/..." target="_blank">https://business.facebook.com/...</a>
-    </div>
     <div class="col col-action">
      <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
     </div>
@@ -453,9 +413,6 @@
      <span class="tag tag-expiring">Aug 25 2025</span>
     </div>
     <div class="col col-customer">Brian Pable Sumayan</div>
-    <div class="col col-msglink">
-     <a href="https://business.facebook.com/..." target="_blank">https://business.facebook.com/...</a>
-    </div>
     <div class="col col-action">
      <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
     </div>
@@ -480,9 +437,6 @@
      <span class="tag tag-expiring">Aug 25 2025</span>
     </div>
     <div class="col col-customer">Brian Pable Sumayan</div>
-    <div class="col col-msglink">
-     <a href="https://business.facebook.com/..." target="_blank">https://business.facebook.com/...</a>
-    </div>
     <div class="col col-action">
      <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
     </div>
@@ -507,9 +461,6 @@
      <span class="tag tag-expiring">Aug 25 2025</span>
     </div>
     <div class="col col-customer">Brian Pable Sumayan</div>
-    <div class="col col-msglink">
-     <a href="https://business.facebook.com/..." target="_blank">https://business.facebook.com/...</a>
-    </div>
     <div class="col col-action">
      <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
     </div>
@@ -518,3 +469,5 @@
   </div>
  </div>
 </section>
+
+<!-- expiring soon -->
