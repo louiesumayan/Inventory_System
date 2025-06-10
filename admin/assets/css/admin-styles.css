@@ -5,6 +5,43 @@ html {
   color: white;
   font-family: 'DM Sans', sans-serif;
 }
+
+/* micah */
+.agent-micah {
+  background-color: #f6e9f4;
+  color: #985189;
+}
+
+/* princes  */
+.agent-princes {
+  background-color: #f5ebe0;
+  color: #8d6e63;
+}
+
+/* dindin  */
+.agent-dindin {
+  background-color: #e0f2f1;
+  color: #00796b;
+}
+
+/* brian  */
+.agent-brian {
+  background-color: #ede9f6;
+  color: #5e5198;
+}
+
+/* louie  */
+.agent-louie {
+  background-color: #fffde7;
+  color: #f57f17;
+}
+
+/* ysh  */
+.agent-ysh {
+  background-color: #fce4ec;
+  color: #ad1457;
+}
+
 .sidebar {
   background-color: #111116;
   min-width: 220px;
@@ -514,18 +551,21 @@ li.tab-list.active::after {
 
 /* create-order-section.css */
 
-/* ---------------------------------------------------
-   1. Container for the entire “create‐order” table
-   --------------------------------------------------- */
 .c-order-section {
   width: 100%;
   margin: 10px auto;
-  /* (You can add max‐width if you want to constrain overall width) */
+  display: none;
 }
 
-/* ---------------------------------------------------
-     2. Outer wrapper giving the subtle “card” look
-     --------------------------------------------------- */
+.create-order-btn.hide {
+  display: none;
+}
+
+.c-order-section.recent-order.active,
+.c-order-section.expiring-soon.active {
+  display: block;
+}
+
 .c-order-table {
   background-color: #ffffff;
   border-radius: 8px;
@@ -538,9 +578,6 @@ li.tab-list.active::after {
   min-height: 745px;
 }
 
-/* ---------------------------------------------------
-     3. Header row styling (10 columns)
-     --------------------------------------------------- */
 .c-order-header {
   display: grid;
   grid-template-columns:
@@ -562,15 +599,10 @@ li.tab-list.active::after {
   margin-bottom: 4px;
 }
 
-/* ---------------------------------------------------
-     4. Scrollable body container (fit ~10 rows)
-     --------------------------------------------------- */
 .c-order-body {
-  min-height: 680px !important; /* Tweak until exactly 10 rows fit without cutting off */
+  min-height: 680px !important;
   overflow-y: auto;
-  /* Firefox */
   scrollbar-width: none;
-  /* IE 10+ */
   -ms-overflow-style: none;
 }
 
@@ -578,9 +610,6 @@ li.tab-list.active::after {
   display: none;
 }
 
-/* ---------------------------------------------------
-     5. Each row in the table body
-     --------------------------------------------------- */
 .c-order-row {
   display: grid;
   grid-template-columns:
@@ -604,23 +633,18 @@ li.tab-list.active::after {
   border-bottom: none;
 }
 
-/* ---------------------------------------------------
-    6. Column-specific utility classes
-     --------------------------------------------------- */
 .col {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-/* 6.1. Product column: icon + text */
 .col-start,
 .col-end,
 .col-customer {
   justify-self: center;
 }
 
-/* 6.2. Agent “badge” styling */
 .agent-badge {
   display: inline-block;
   padding: 2px 8px;
@@ -631,61 +655,10 @@ li.tab-list.active::after {
   color: #3f3fa7;
 }
 
-/* micah */
-.agent-micah {
-  background-color: #f6e9f4;
-  color: #985189;
-}
-
-/* princes  */
-.agent-princes {
-  background-color: #f5ebe0;
-  color: #8d6e63;
-}
-
-/* dindin  */
-.agent-dindin {
-  background-color: #e0f2f1;
-  color: #00796b;
-}
-
-/* brian  */
-.agent-brian {
-  background-color: #ede9f6;
-  color: #5e5198;
-}
-
-/* louie  */
-.agent-louie {
-  background-color: #fffde7;
-  color: #f57f17;
-}
-
-/* ysh  */
-.agent-ysh {
-  background-color: #fce4ec;
-  color: #ad1457;
-}
-
-/* 6.4. Link styling in message column */
-.col-msglink a {
-  color: #1b6ec2;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.col-msglink a:hover {
-  text-decoration: underline;
-}
-
-/* 6.5. Action column: center the button */
 .col-action {
   justify-content: center;
 }
 
-/* ---------------------------------------------------
-     7. Row-icon (24×24) and text styling
-     --------------------------------------------------- */
 .row-icon {
   width: 24px;
   height: 24px;
@@ -696,27 +669,14 @@ li.tab-list.active::after {
   font-weight: 500;
 }
 
-/* ---------------------------------------------------
-     8. “Three-dot” action button
-     --------------------------------------------------- */
-
-/* ---------------------------------------------------
-     9. Hover effect on each body row
-     --------------------------------------------------- */
 .c-order-row:hover {
   background-color: #fafafa;
 }
 
-/* ---------------------------------------------------
-   10. (Optional) Make text lighter in body cells
-     --------------------------------------------------- */
 .c-order-body .c-order-row > div {
   color: #7c8086cc;
 }
 
-/* ---------------------------------------------------
-   11. Responsive adjustments (small screens)
-     --------------------------------------------------- */
 @media (max-width: 768px) {
   .c-order-header,
   .c-order-row {
@@ -749,11 +709,175 @@ li.tab-list.active::after {
   }
 }
 
+.orders-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow: hidden;
+  height: 745px;
+  min-height: 745px;
+}
+
+/* expiring soon header */
+
+.orders-header {
+  display: grid;
+  grid-template-columns:
+    2fr /* product-col */
+    1fr /* duration-col */
+    1fr /* price-col */
+    1fr /* end-col */
+    2fr /* customer-col */
+    0.5fr /* notice-col */
+    0.5fr /* renew-col */
+    2fr /* account-col */
+    2fr /* message-col */
+    0.5fr /* action-col */;
+  padding: 0.75rem 1rem;
+  background-color: #f6f8fa;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #000000;
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+
+.orders-body {
+  min-height: 680px !important;
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.orders-body::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* expiring soon row */
+
+.orders-row {
+  display: grid;
+  grid-template-columns:
+    2fr /* product-col */
+    1fr /* duration-col */
+    1fr /* price-col */
+    1fr /* end-col */
+    2fr /* customer-col */
+    0.5fr /* notice-col */
+    0.5fr /* renew-col */
+    2fr /* account-col */
+    2fr /* message-col */
+    0.5fr /* action-col */;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  color: #444444;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.orders-row:last-child {
+  border-bottom: none;
+}
+
+.product-col,
+.duration-col,
+.price-col,
+.end-col,
+.customer-col,
+.notice-col,
+.renew-col,
+.account-col,
+.message-col,
+.action-col {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.notice-col,
+.renew-col {
+  justify-content: center;
+}
+
+.action-col {
+  justify-content: center;
+}
+
+.row-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.row-text {
+  font-weight: 500;
+}
+
+.tag-expiring {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background-color: #f8d7da;
+  color: #842029;
+}
+
+.agent-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: #e0e0ff; /* fallback */
+  color: #3f3fa7; /* fallback */
+}
+
+.orders-row:hover {
+  background-color: #fafafa;
+}
+
+.orders-body .orders-row > div {
+  color: #7c8086cc;
+}
+
+@media (max-width: 768px) {
+  .orders-header,
+  .orders-row {
+    grid-template-columns:
+      2fr /* product-col */
+      1fr /* duration-col */
+      1fr /* price-col */
+      1fr /* end-col */
+      1.5fr /* customer-col */
+      0.5fr /* notice-col */
+      0.5fr /* renew-col */
+      1.5fr /* account-col */
+      1.5fr /* message-col */
+      0.5fr /* action-col */;
+  }
+  .orders-header {
+    font-size: 0.85rem;
+  }
+  .orders-row {
+    font-size: 0.85rem;
+  }
+  .row-text {
+    font-size: 0.9rem;
+  }
+  .agent-badge {
+    font-size: 0.75rem;
+  }
+  .tag-expiring {
+    font-size: 0.75rem;
+  }
+}
+
 /* payment-section.css */
 
-/* ----------------------------------------------------------
-   1. Wrapper & Grid Layout for All Cards
-   ---------------------------------------------------------- */
 .payment-section {
   overflow-y: auto;
   width: 100%;
@@ -779,9 +903,6 @@ li.tab-list.active::after {
   gap: 16px;
 }
 
-/* ----------------------------------------------------------
-     2. Individual Card Styling
-     ---------------------------------------------------------- */
 .payment-card {
   background-color: #f6f8fa;
   border-radius: 8px;
@@ -792,9 +913,6 @@ li.tab-list.active::after {
   position: relative;
 }
 
-/* ----------------------------------------------------------
-     3. Card Header (Avatar, Badge, Name, Edit Button)
-     ---------------------------------------------------------- */
 .card-header {
   display: flex;
   align-items: center;
@@ -876,9 +994,6 @@ li.tab-list.active::after {
   background-color: #333333;
 }
 
-/* ----------------------------------------------------------
-     4. Payment Options Box
-     ---------------------------------------------------------- */
 .payment-options {
   background-color: #f7f8f9;
   border-radius: 6px;
@@ -941,9 +1056,6 @@ li.tab-list.active::after {
   opacity: 0.7;
 }
 
-/* ----------------------------------------------------------
-     5. “Add payment option” Button
-     ---------------------------------------------------------- */
 .add-option-button {
   background-color: #a0a4a8;
   color: #ffffff;
@@ -960,9 +1072,6 @@ li.tab-list.active::after {
   background-color: #777a7d;
 }
 
-/* ----------------------------------------------------------
-     6. Responsive Adjustments
-     ---------------------------------------------------------- */
 @media (max-width: 600px) {
   .payment-card {
     padding: 12px;
@@ -981,4 +1090,46 @@ li.tab-list.active::after {
     font-size: 0.85rem;
     padding: 6px 0;
   }
+}
+
+/* finance style css */
+
+.finance-header {
+  display: grid;
+  grid-template-columns:
+    1fr /* Product */
+    1fr /* Agent */
+    1fr /* MOP */
+    1fr /* Duration */
+    1fr /* Price */
+    1fr /* Start */
+    1fr /* End */
+    1fr; /* Action */
+  padding: 0.75rem 1rem;
+  background-color: #f6f8fa;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #000000;
+  border-radius: 8px;
+  margin-bottom: 4px;
+  justify-items: center;
+}
+
+.finance-row {
+  display: grid;
+  grid-template-columns:
+    1fr /* Product */
+    1fr /* Agent */
+    1fr /* MOP */
+    1fr /* Duration */
+    1fr /* Price */
+    1fr /* Start */
+    1fr /* End */
+    1fr; /* Action */
+  justify-items: center;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  font-size: 0.92rem;
+  color: #444444;
+  border-bottom: 1px solid #eeeeee;
 }
