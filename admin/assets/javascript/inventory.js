@@ -1,29 +1,13 @@
-const tab_list = document.querySelectorAll('.tab-list');
+import { switchingTabs } from './function.js';
 const inventory_tabs = document.querySelectorAll('.inventory-section');
 const button_text = document.querySelector('.add-product');
 
-//add a eventlistener for each tab
-tab_list.forEach((tab) => {
-  tab.addEventListener('click', () => {
-    //remove class active foreach click
-    tab_list.forEach((t) => {
-      t.classList.remove('active');
-    });
-
-    // add active class to the clicked tab
-    tab.classList.add('active');
-
-    // check if the tab contain the "active" class
-    if (tab.classList.contains('active')) {
-      if (tab.textContent === 'Product Listed') {
-        inventory_tabs[1].classList.remove('active');
-        inventory_tabs[0].classList.add('active');
-        button_text.innerHTML = '<i class="fa-solid fa-plus"></i> Add Product';
-      } else if (tab.textContent === 'Account Listing') {
-        inventory_tabs[0].classList.remove('active');
-        inventory_tabs[1].classList.add('active');
-        button_text.innerHTML = '<i class="fa-solid fa-plus"></i> Add Account';
-      }
-    }
-  });
-});
+switchingTabs(
+  inventory_tabs,
+  button_text,
+  'Product Listed',
+  'Account Listing',
+  'Add Product',
+  'Add Account',
+  false
+);
