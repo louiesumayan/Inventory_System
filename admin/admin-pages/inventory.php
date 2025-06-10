@@ -9,6 +9,7 @@
    <li class="tab-list ">Account Listing</li>
   </ul>
  </div>
+
  <div class="search-input">
   <input placeholder="Search" type="text" name="serach" id="">
   <i class="fa-solid fa-magnifying-glass"></i>
@@ -254,3 +255,5 @@
   </div>
  </div>
 </section>
+
+<script type="module" src="./assets/javascript/inventory.js"></script>

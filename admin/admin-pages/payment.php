@@ -4,8 +4,8 @@
 <section class="search-container">
  <div class="search-input">
   <!-- uncomment this for future changes -->
-  <!-- <input placeholder="Search" type="text" name="serach" id="">
-  <i class="fa-solid fa-magnifying-glass"></i> -->
+  <input placeholder="Search" type="text" name="serach" id="">
+  <i class="fa-solid fa-magnifying-glass"></i>
  </div>
  <button class="add-product" name="add-product"><i class="fa-solid fa-plus"></i> Add Payment</button>
 </section>

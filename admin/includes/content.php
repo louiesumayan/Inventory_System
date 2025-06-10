@@ -49,7 +49,7 @@
 
   ?>
 
-  <script src="./assets/javascript/inventory.js"></script>
+  <script type="module" src="./assets/javascript/function.js"></script>
 
 
 </main>
