@@ -24,9 +24,11 @@
   <div class="inventory-header">
    <div class="col product">Product Name</div>
    <div class="col duration">Duration</div>
-   <div class="col stock">Stock</div>
    <div class="col price">Price</div>
+   <div class="col stock">Stock</div>
+   <div class="col c-stock">Current Stock</div>
    <div class="col status">Status</div>
+   <div class="col account">Account</div>
    <div class="col action">Action</div>
   </div>
 
@@ -39,168 +41,18 @@
      <span class="product-name">Canva</span>
     </div>
     <div class="col duration">2 weeks</div>
-    <div class="col stock">99999</div>
     <div class="col price">₱100</div>
-    <div class="col status">
-     <span class="tag">In stock</span>
-    </div>
-    <div class="col action">
-     <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
-    </div>
-   </div>
-
-   <!-- Row 2 -->
-   <div class="inventory-row">
-    <div class="col product">
-     <img src="../images/Icons/chat-gpt.png" alt="GPT Icon" class="product-icon" />
-     <span class="product-name">GPT</span>
-    </div>
-    <div class="col duration">1 mo</div>
-    <div class="col stock">5555555</div>
-    <div class="col price">₱199</div>
-    <div class="col status">
-     <span class="tag tag-warning">Low stock</span>
-    </div>
-    <div class="col action">
-     <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
-    </div>
-   </div>
-
-   <!-- Row 3 -->
-   <div class="inventory-row">
-    <div class="col product">
-     <img src="../images/Icons/chat-gpt.png" alt="GPT Icon" class="product-icon" />
-     <span class="product-name">GPT</span>
-    </div>
-    <div class="col duration">2 mos</div>
-    <div class="col stock">5555555</div>
-    <div class="col price">₱399</div>
-    <div class="col status">
-     <span class="tag tag-warning">Low stock</span>
-    </div>
-    <div class="col action">
-     <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
-    </div>
-   </div>
-
-   <!-- Row 4 -->
-   <div class="inventory-row">
-    <div class="col product">
-     <img src="../images/Icons/chat-gpt.png" alt="GPT Icon" class="product-icon" />
-     <span class="product-name">GPT</span>
-    </div>
-    <div class="col duration">3 mos</div>
-    <div class="col stock">5555555</div>
-    <div class="col price">₱499</div>
-    <div class="col status">
-     <span class="tag tag-expiring">Out of stock</span>
-    </div>
-    <div class="col action">
-     <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
-    </div>
-   </div>
-
-   <!-- Row 5 -->
-   <div class="inventory-row">
-    <div class="col product">
-     <img src="../images/Icons/netflix.png" alt="Netflix Icon" class="product-icon" />
-     <span class="product-name">Netflix</span>
-    </div>
-    <div class="col duration">1 mo</div>
     <div class="col stock">99999</div>
-    <div class="col price">₱100</div>
-    <div class="col status">
+    <div class="col c-stock">99999</div>
+    <div class="col status p-listed">
      <span class="tag">In stock</span>
     </div>
+    <div class="col account">bmdigital@proton.me</div>
     <div class="col action">
      <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
     </div>
    </div>
 
-   <!-- Row 6 (Example placeholder) -->
-   <div class="inventory-row">
-    <div class="col product">
-     <img src="../images/Icons/grammarly.png" alt="Placeholder Icon" class="product-icon" />
-     <span class="product-name">Product 6</span>
-    </div>
-    <div class="col duration">—</div>
-    <div class="col stock">—</div>
-    <div class="col price">—</div>
-    <div class="col status">
-     <span class="tag">In stock</span>
-    </div>
-    <div class="col action">
-     <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
-    </div>
-   </div>
-
-   <!-- Row 7 (Example placeholder) -->
-   <div class="inventory-row">
-    <div class="col product">
-     <img src="../images/Icons/grammarly.png" alt="Placeholder Icon" class="product-icon" />
-     <span class="product-name">Product 7</span>
-    </div>
-    <div class="col duration">—</div>
-    <div class="col stock">—</div>
-    <div class="col price">—</div>
-    <div class="col status">
-     <span class="tag tag-warning">Low stock</span>
-    </div>
-    <div class="col action">
-     <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
-    </div>
-   </div>
-
-   <!-- Row 8 (Example placeholder) -->
-   <div class="inventory-row">
-    <div class="col product">
-     <img src="../images/Icons/grammarly.png" alt="Placeholder Icon" class="product-icon" />
-     <span class="product-name">Product 8</span>
-    </div>
-    <div class="col duration">—</div>
-    <div class="col stock">—</div>
-    <div class="col price">—</div>
-    <div class="col status">
-     <span class="tag tag-expiring">Out of stock</span>
-    </div>
-    <div class="col action">
-     <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
-    </div>
-   </div>
-
-   <!-- Row 9 (Example placeholder) -->
-   <div class="inventory-row">
-    <div class="col product">
-     <img src="../images/Icons/grammarly.png" alt="Placeholder Icon" class="product-icon" />
-     <span class="product-name">Product 9</span>
-    </div>
-    <div class="col duration">—</div>
-    <div class="col stock">—</div>
-    <div class="col price">—</div>
-    <div class="col status">
-     <span class="tag">In stock</span>
-    </div>
-    <div class="col action">
-     <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
-    </div>
-   </div>
-
-   <!-- Row 10 (Example placeholder) -->
-   <div class="inventory-row">
-    <div class="col product">
-     <img src="../images/Icons/grammarly.png" alt="Placeholder Icon" class="product-icon" />
-     <span class="product-name">Product 10</span>
-    </div>
-    <div class="col duration">—</div>
-    <div class="col stock">—</div>
-    <div class="col price">—</div>
-    <div class="col status">
-     <span class="tag tag-warning">Low stock</span>
-    </div>
-    <div class="col action">
-     <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
-    </div>
-   </div>
   </div>
  </div>
 </section>
@@ -209,49 +61,40 @@
 
 <!-- inventory-account-section.html -->
 
-<section class="inventory-section account ">
+<section class="inventory-section account">
  <div class="inventory-table">
   <div class="inventory-header">
    <div class="col product">Account</div>
    <div class="col duration">Phrase</div>
-   <div class="col stock">Category</div>
-   <div class="col price">Start date</div>
-   <div class="col status">End date</div>
+   <div class="col usage">Usage Count</div>
+   <div class="col duration">Duration</div>
+   <div class="col product">Product Name</div>
+   <div class="col start">Start</div>
+   <div class="col end">End</div>
    <div class="col action">Action</div>
   </div>
 
   <div class="inventory-body">
    <div class="inventory-row">
+    <div class="col account">bmdigital@proton.me</div>
+    <div class="col duration">2qwe@#41</div>
+    <div class="col stock">99999</div>
+    <div class="col duration">3 mos</div>
     <div class="col product">
      <img src="../images/Icons/canva.png" alt="GPT Icon" class="product-icon" />
      <span class="product-name">Canva account</span>
     </div>
-    <div class="col duration">2qwe@#41</div>
-    <div class="col stock">99999</div>
-    <div class="col price">₱100</div>
     <div class="col status">
-     <span class="tag">In stock</span>
+     <span class="tag tag-recent">May 25 2025</span>
+    </div>
+    <div class="col status">
+     <span class="tag tag-expiring">May 25 2025</span>
     </div>
     <div class="col action">
      <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
     </div>
    </div>
 
-   <div class="inventory-row">
-    <div class="col product">
-     <img src="../images/Icons/chat-gpt.png" alt="GPT Icon" class="product-icon" />
-     <span class="product-name">GPT account</span>
-    </div>
-    <div class="col duration">123@adw2</div>
-    <div class="col stock">5555555</div>
-    <div class="col price">₱199</div>
-    <div class="col status">
-     <span class="tag tag-warning">Low stock</span>
-    </div>
-    <div class="col action">
-     <button class="action-btn"><img src="../images/Icons/action-btn.png" alt=""></button>
-    </div>
-   </div>
   </div>
  </div>
 </section>

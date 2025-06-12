@@ -319,8 +319,8 @@ tbody tr:hover {
   border-radius: 15px;
   font-size: 0.8rem;
   font-weight: 500;
-  background-color: #d1e7dd;
-  color: #0f5132;
+  background-color: #e9f6eb;
+  color: #519862;
 }
 
 .tag-expiring {
@@ -450,7 +450,7 @@ li.tab-list.active::after {
 /* Header row styling */
 .inventory-header {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 0.5fr;
+  grid-template-columns: repeat(8, 1fr);
   padding: 0.75rem 1rem;
   background-color: #f6f8fa;
   font-size: 0.9rem;
@@ -460,10 +460,20 @@ li.tab-list.active::after {
   color: #000000;
 }
 
-/* Scrollable body container, fixed height to fit 10 rows approx. */
+.inventory-header .col.start,
+.inventory-header .col.end,
+.inventory-row .col.status {
+  justify-self: center !important;
+}
+
+.inventory-row .col.p-listed {
+  justify-self: start !important;
+}
+
 .inventory-body {
   height: 675px;
-  max-height: 685px; /* Adjust as needed so that roughly 10 rows fit */
+  /* Adjust as needed so that roughly 10 rows fit */
+  max-height: 685px;
   overflow-y: auto;
   /* Firefox */
   scrollbar-width: none;
@@ -479,8 +489,9 @@ li.tab-list.active::after {
 /* Each row in the table body */
 .inventory-row {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 0.5fr;
+  grid-template-columns: repeat(8, 1fr);
   align-items: center;
+  justify-content: center;
   padding: 0.75rem 1rem;
   font-size: 0.9rem;
   color: #444444;
@@ -1094,6 +1105,10 @@ li.tab-list.active::after {
 
 /* finance style css */
 
+.f-ledger.active {
+  display: block;
+}
+
 .finance-header {
   display: grid;
   grid-template-columns:
@@ -1112,7 +1127,6 @@ li.tab-list.active::after {
   color: #000000;
   border-radius: 8px;
   margin-bottom: 4px;
-  justify-items: center;
 }
 
 .finance-row {
@@ -1126,10 +1140,61 @@ li.tab-list.active::after {
     1fr /* Start */
     1fr /* End */
     1fr; /* Action */
-  justify-items: center;
-  align-items: center;
   padding: 0.75rem 1rem;
   font-size: 0.92rem;
   color: #444444;
   border-bottom: 1px solid #eeeeee;
+}
+
+.f-summary.active {
+  display: block;
+}
+
+.f-summary-header {
+  display: grid;
+  grid-template-columns:
+    1fr /* Product */
+    1fr /* Agent */
+    1fr /* MOP */
+    1fr /* Duration */
+    1fr /* Price */
+    1fr; /* Action */
+  padding: 0.75rem 1rem;
+  background-color: #f6f8fa;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #000000;
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+
+.f-summary-row {
+  display: grid;
+  grid-template-columns:
+    1fr /* Product */
+    1fr /* Agent */
+    1fr /* MOP */
+    1fr /* Duration */
+    1fr /* Price */
+    1fr; /* Action */
+  padding: 0.75rem 1rem;
+  font-size: 0.92rem;
+  color: #444444;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.product-col.f-ledger-items {
+  justify-self: center;
+}
+.col-start.f-ledger-date,
+.col-price.f-ledger-date {
+  justify-self: center;
+}
+
+/* .col-start.t-summary {
+  justify-self: start;
+} */
+
+.col.t-summary-stat {
+  justify-self: center;
 }
