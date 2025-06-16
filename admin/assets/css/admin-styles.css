@@ -340,6 +340,108 @@ tbody tr:hover {
 
 /* inventory css */
 
+/* Modal Styles */
+.inventory_modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  padding-top: 100px; /* Padding to center the modal vertically */
+}
+
+/* Modal Content */
+.inventory_modal .modal-content {
+  background-color: white;
+  margin: 90px auto;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #888;
+  width: 80%; /* Width of the modal */
+  max-width: 600px; /* Max width to avoid stretching too much on larger screens */
+}
+
+/* Close button */
+.inventory_modal .close {
+  padding: 6px 15px 6px 15px;
+  /* width: 30px; */
+  /* height: 30px; */
+  color: #a31717;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  cursor: pointer;
+  border: 2px solid #a31717;
+  border-radius: 50px;
+}
+
+.inventory_modal .close:hover,
+.inventory_modal .close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+/* Modal form elements */
+.inventory_modal h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: black;
+  text-align: center;
+}
+
+.inventory_modal form .create-inventory div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.inventory_modal form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.inventory_modal form .create-inventory {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.inventory_modal form .create-inventory > div > label {
+  margin: 10px 0 5px;
+  font-weight: 500;
+  color: black;
+}
+
+.inventory_modal form .create-inventory div input,
+.inventory_modal form .create-inventory div select {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.inventory_modal form button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.inventory_modal form button:hover {
+  background-color: #45a049;
+}
+
 .search-container {
   display: flex;
   justify-content: space-between;

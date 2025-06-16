@@ -1,1 +1,2 @@
-<h2>Settings</h2>
+<?php $currentPage = "General Settings" ?>
+<?php include './includes/top-bar.php' ?>
