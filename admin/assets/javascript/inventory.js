@@ -19,8 +19,10 @@ window.addEventListener('load', (event) => {
 
 function inventory_modal_1() {
   modalContent('#inventory_1', '.add-product', '.close');
+  return;
 }
 
 function inventory_modal_2() {
   modalContent('#createProductModal', '.add-product', '.close');
+  return;
 }

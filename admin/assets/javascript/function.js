@@ -35,6 +35,7 @@ export function switchingTabs(
           if (!isFunctionCalled) {
             functiona_name_1(); // Call the function for Tab 1
             isFunctionCalled = true;
+            return;
           }
           isFunctionCalled = true;
         } else if (tab.textContent === SwitchTabName2) {
@@ -52,6 +53,7 @@ export function switchingTabs(
           isFunctionCalled = false;
 
           functiona_name_2(); // Call the function for Tab 2
+          return;
         }
       }
     });
@@ -60,6 +62,7 @@ export function switchingTabs(
   if (!isFunctionCalled) {
     functiona_name_1();
     isFunctionCalled = true;
+    return;
   }
 }
 
@@ -74,6 +77,7 @@ export function modalContent(modalID, modalButton, modalClose) {
     // Get the <span> element that closes the modal
     var span = $(modalClose);
 
+    modal.hide();
     // When the user clicks the button, open the modal
     btn.click(function () {
       modal.show();
