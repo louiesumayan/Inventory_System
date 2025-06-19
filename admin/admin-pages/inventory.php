@@ -17,77 +17,50 @@
  <button class="add-product" name="add-product"><i class="fa-solid fa-plus"></i> Add Product</button>
 </section>
 
-<!-- Modal HTML -->
-<div id="createProductModal" class="inventory_modal">
- <div class="modal-content">
-  <span class="close">&times;</span>
-  <h2>Create Product</h2>
-  <form>
-
-   <section class="create-inventory">
-    <div>
-     <label for="productName">Product Name<span class="text-danger">*</span></label>
-     <select id="productName">
-      <option value="">Select Category</option>
-     </select>
-    </div>
-
-    <div>
-     <label for="duration">Duration</label>
-     <input type="text" id="duration">
-    </div>
-
-    <div>
-     <label for="price">Price<span class="text-danger">*</span></label>
-     <input type="text" id="price" placeholder="ex. ₱522">
-    </div>
-
-    <div>
-     <label for="stock">Stock<span class="text-danger">*</span></label>
-     <input type="text" id="stock" placeholder="ex. 100">
-    </div>
-   </section>
-
-   <button type="submit">Create</button>
-  </form>
- </div>
-</div>
-
-<script>
-
- $(document).ready(function () {
-  // Get the modal
-  var modal = $('#createProductModal');
-
-  // Get the button that opens the modal
-  var btn = $('.add-product');
-
-  // Get the <span> element that closes the modal
-  var span = $('.close');
-
-  // When the user clicks the button, open the modal
-  btn.click(function () {
-   modal.show();
-  });
-
-  // When the user clicks on <span> (x), close the modal
-  span.click(function () {
-   modal.hide();
-  });
-
-  // When the user clicks anywhere outside of the modal, close it
-  $(window).click(function (event) {
-   if ($(event.target).is(modal)) {
-    modal.hide();
-   }
-  });
- });
 
 
-</script>
+
+
 
 <!-- inventory-product-section.html -->
 <section class="inventory-section product active">
+
+ <!-- Modal HTML -->
+ <div id="inventory_1" class="inventory_modal">
+  <div class="modal-content">
+   <span class="close">&times;</span>
+   <h2>Create Product 1</h2>
+   <form>
+
+    <section class="create-inventory">
+     <div>
+      <label for="productName">Product Name<span class="text-danger">*</span></label>
+      <select id="productName">
+       <option value="">Select Category</option>
+      </select>
+     </div>
+
+     <div>
+      <label for="duration">Duration</label>
+      <input type="text" id="duration">
+     </div>
+
+     <div>
+      <label for="price">Price<span class="text-danger">*</span></label>
+      <input type="text" id="price" placeholder="ex. ₱522">
+     </div>
+
+     <div>
+      <label for="stock">Stock<span class="text-danger">*</span></label>
+      <input type="text" id="stock" placeholder="ex. 100">
+     </div>
+    </section>
+
+    <button type="submit">Create</button>
+   </form>
+  </div>
+ </div>
+
  <div class="inventory-table">
   <!-- Table Header -->
   <div class="inventory-header">
@@ -131,6 +104,42 @@
 <!-- inventory-account-section.html -->
 
 <section class="inventory-section account">
+
+ <div id="createProductModal" class="inventory_modal">
+  <div class="modal-content">
+   <span class="close">&times;</span>
+   <h2>Create Product 2</h2>
+   <form>
+
+    <section class="create-inventory">
+     <div>
+      <label for="productName">Product Name<span class="text-danger">*</span></label>
+      <select id="productName">
+       <option value="">Select Category</option>
+      </select>
+     </div>
+
+     <div>
+      <label for="duration">Duration</label>
+      <input type="text" id="duration">
+     </div>
+
+     <div>
+      <label for="price">Price<span class="text-danger">*</span></label>
+      <input type="text" id="price" placeholder="ex. ₱522">
+     </div>
+
+     <div>
+      <label for="stock">Stock<span class="text-danger">*</span></label>
+      <input type="text" id="stock" placeholder="ex. 100">
+     </div>
+    </section>
+
+    <button type="submit">Create</button>
+   </form>
+  </div>
+ </div>
+
  <div class="inventory-table">
   <div class="inventory-header">
    <div class="col product">Account</div>
